@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/minhocao",
     "maintainers": [
       {
@@ -16,111 +16,323 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "minhocao",
     "name": "Minhocão",
-    "aliases": [],
-    "category": "CRYPTID",
-    "subcategory": "of the Subterranean Monster:",
-    "tags": [
-      "folklore",
-      "mythology"
+    "aliases": [
+      { "name": "Minhocão", "language": "Portuguese", "meaning": "'Big earthworm' — augmentative of minhoca ('earthworm')" }
     ],
-    "status": "documented",
+    "category": "CRYPTID",
+    "subcategory": "Subterranean cryptid (giant worm / serpent)",
+    "tags": [
+      "cryptid",
+      "south-america",
+      "brazil",
+      "subterranean",
+      "giant-worm",
+      "lungfish",
+      "19th-century",
+      "saint-hilaire",
+      "fritz-muller"
+    ],
+    "status": "historical",
     "description": {
-      "summary": "The Minhocão (Portuguese for \\\"giant earthworm\\\") is one of Brazil's most enigmatic cryptozoological mysteries—a creature described as an enormous subterranean worm or serpent that allegedly creates tunnels, trenches, and dramatic landscape alterations throughout southern Brazil.",
-      "full": "The Minhocão (Portuguese for \\\"giant earthworm\\\") is one of Brazil's most enigmatic cryptozoological mysteries—a creature described as an enormous subterranean worm or serpent that allegedly creates tunnels, trenches, and dramatic landscape alterations throughout southern Brazil. First documented in the mid-19th century, reports describe a massive, black, scale-covered creature measuring between 25 to 50 meters in length, with a pig-like snout and tentacle-like appendages near its head. Unlike many cryptids that remain purely in the realm of folklore, the Minhocão attracted serious scientific attention in the 1870s when German naturalist Fritz Müller—a correspondent of Charles Darwin and respected figure in the scientific community—investigated numerous reports and forwarded his findings to international scientific journals. This investigation elevated the Minhocão from local legend to a subject of genuine scientific curiosity, though conclusive proof has remained elusive. The legend occupies a unique space between cryptozoology and geology, as many modern researchers suggest that Minhocão sightings may actually represent misunderstood geological phenomena such as soil subsidence, underground erosion, or seismic activity rather than an unknown biological entity. Nevertheless, the consistent pattern of historical reports and the dramatic physical evidence in the form of trenches and disturbed earth continue to fuel speculation about the true nature of this mysterious phenomenon."
+      "summary": "A 19th-century Brazilian cryptid reported chiefly in southern Brazil — described as a vast subterranean black-scaled worm or eel-like creature blamed for tunnels, trenches, and toppled trees — investigated by Auguste de Saint-Hilaire (1846) and Fritz Müller (1877–1878) and now generally treated as a folkloric explanation of soil-erosion and slumping events.",
+      "full": "The Minhocão (Portuguese for 'big earthworm', augmentative of minhoca) is a Brazilian cryptid documented in 19th-century reports from the southern Brazilian provinces of Santa Catarina, Paraná, and São Paulo, with extension into northern Argentina and Uruguay. Witnesses described an enormous subterranean creature variously likened to an earthworm, eel, or serpent, with tough black scales, no clearly visible legs, and (in some accounts) a pig-like snout or paired tentacle-like appendages. Length estimates ranged from 20 to 80 m; widths from one to three metres. The creature was credited with tunnelling beneath houses and roads, gouging long trenches, undermining riverbanks, and dragging horses and cattle into the water. Two important 19th-century naturalists investigated: French botanist and explorer Augustin François César Prouvençal de Saint-Hilaire reported on the creature in December 1846 from accounts at Padre Aranda and Lake Feia in Goiás and elsewhere, and German-Brazilian zoologist Fritz Müller (a correspondent of Charles Darwin) published an article in the German journal Zoologischer Garten in 1877 drawing on accounts by Senhor Lebino of Curitibanos. Both proposed identification with a giant South American lungfish (Lepidosiren); later cryptozoologists (notably Bernard Heuvelmans) revived the case as a relict glyptodont or giant amphibian. Modern Brazilian commentators generally treat the Minhocão as a folk explanation for soil-piping erosion, slumping, riverbank collapse, and seismic activity in southern Brazil's heavy red earth."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Portuguese; a regular augmentative of minhoca ('earthworm') with the suffix -ão.",
+      "meaning": "'Big earthworm', 'great earthworm', or 'huge worm'.",
+      "first_use": "Recorded in 19th-century Brazilian Portuguese; in scientific literature from Saint-Hilaire (1847) onward"
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "CRYPTID",
-      "type": "of the Subterranean Monster:",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Subterranean cryptid",
+      "subtype": "Giant worm / serpent",
+      "variant": "South American (Brazilian)"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "mongolian-death-worm", "name": "Mongolian Death Worm", "relationship": "similar", "description": "Other large subterranean cryptid reported far away" },
+      { "id": "kongamato", "name": "Kongamato", "relationship": "related", "description": "Other 19th–20th-century surviving-prehistoric-animal cryptid" },
+      { "id": "iara", "name": "Iara", "relationship": "related", "description": "Other Brazilian water-related folk creature" },
+      { "id": "boto-cor-de-rosa", "name": "Boto cor-de-rosa", "relationship": "related", "description": "Brazilian river dolphin folklore" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 1.0, "max": 3.0, "unit": "meters", "confidence": "low" },
+      "coloration": ["black", "dark brown", "armoured / scaled appearance"],
+      "features": [
+        { "feature": "Great length", "description": "Reports give lengths of 20 to 80 m (60 to 240 ft); one 1878 account specifies '50 yards in length and 5 in breadth'", "frequency": "always" },
+        { "feature": "Tough black scales", "description": "Witnesses describe a tough, armoured, black scaly hide", "frequency": "common" },
+        { "feature": "Pig-like snout (some accounts)", "description": "Francisco de Amaral Varella's account specifies a snout 'like a pig'", "frequency": "occasional" },
+        { "feature": "Paired tentacle-like appendages (some accounts)", "description": "Some accounts describe a pair of tentacle-like growths near the head; earlier reports mention horns", "frequency": "occasional" },
+        { "feature": "Burrowing tracks", "description": "The signature physical trace is large trenches, depressions, and toppled trees attributed to the creature's passage", "frequency": "common" }
+      ],
+      "morphology": "An enormous, elongate, mostly limbless subterranean creature; both Saint-Hilaire and Müller compared it morphologically with a giant lungfish."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Tunnelling and trench-creation", "description": "Said to gouge long trenches and undermine riverbanks during heavy rain", "frequency": "common", "evidence_level": "reported" },
+      { "ability": "Dragging livestock under water", "description": "Reportedly seizes horses and cattle from the bank and pulls them under", "frequency": "occasional", "evidence_level": "folklore" },
+      { "ability": "Subterranean sound", "description": "Witnesses report rumbling sounds, sometimes described as thunder, accompanying its movement; some claim these sounds 'presage a period of rainy weather'", "frequency": "common", "evidence_level": "reported" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "variable",
+      "disposition": "neutral",
+      "social_structure": "solitary",
+      "habitat_preference": ["riverbanks", "swampy lowlands", "heavy red-earth pampas country", "underground water-courses"],
+      "patterns": [
+        "Activity reported chiefly during and after heavy rain",
+        "Reports concentrate in southern Brazil (Santa Catarina, Paraná) and adjoining areas",
+        "Reports decline sharply after the late 19th century"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Reports concentrate in southern Brazil (especially Santa Catarina and Paraná around Curitibanos), with secondary reports in Goiás and São Paulo; Saint-Hilaire's accounts also included locations such as Padre Aranda and Lake Feia.",
+      "continents": ["South America"],
+      "countries": ["Brazil", "Uruguay", "Argentina"],
+      "regions": [
+        "Santa Catarina",
+        "Paraná",
+        "São Paulo",
+        "Goiás",
+        "Rio Grande do Sul"
+      ]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Curitibanos, Santa Catarina",
+        "location": {
+          "description": "Inland town of Santa Catarina, Brazil",
+          "country": "Brazil",
+          "region": "Santa Catarina",
+          "coordinates": { "latitude": -27.2828, "longitude": -50.5836 }
+        },
+        "peak_period": "1870s",
+        "notes": "Setting of Senhor Lebino's accounts collected by Fritz Müller and published in 1877"
+      },
+      {
+        "name": "Padre Aranda / Lake Feia",
+        "location": {
+          "description": "Padre Aranda and Lake Feia, Goiás, Brazil",
+          "country": "Brazil",
+          "region": "Goiás",
+          "coordinates": { "latitude": -16.0, "longitude": -50.0 }
+        },
+        "peak_period": "1846",
+        "notes": "Sites of accounts compiled by Saint-Hilaire in December 1846"
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "1846-12-01",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Saint-Hilaire's December 1846 reports from Padre Aranda and Lake Feia"
+      },
+      "peak_activity_periods": [
+        { "period": "1846–1880", "description": "Period of active reporting in southern Brazil and scientific investigation by Saint-Hilaire and Müller" }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "19th-century Brazilian rural folklore concentrated in southern Brazil's pampas and Atlantic-forest fringe.",
+      "earliest_accounts": "Saint-Hilaire's 1846 collections; published in 1847 in the Revue des Deux Mondes.",
+      "folklore_connections": "Sits within a broader Brazilian tradition of subterranean and water-creature folklore (Boitatá, Boiúna, Iara) and within the 19th-century European interest in 'living fossils' such as lungfish."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1846-12-01", "event": "Saint-Hilaire collects Minhocão accounts at Padre Aranda and Lake Feia in Goiás", "significance": "Earliest scientific documentation of the creature", "source": "Saint-Hilaire, A. (1847)" },
+      { "date": "1847-01-01", "event": "Saint-Hilaire publishes 'Le Minhocão' in the Revue des Deux Mondes", "significance": "First major European-language treatment", "source": "Revue des Deux Mondes (1847)" },
+      { "date": "1877-01-01", "event": "Fritz Müller publishes an article on the Minhocão in Zoologischer Garten, drawing on Senhor Lebino's accounts at Curitibanos and proposing a giant South American lungfish (Lepidosiren) identification", "significance": "Most influential 19th-century scientific treatment", "source": "Müller, F. (1877), Zoologischer Garten" },
+      { "date": "1878-05-01", "event": "Müller is reported to have suggested he could obtain a Minhocão specimen for European collections; no specimen was ever produced", "significance": "Closing window of serious 19th-century interest", "source": "Wikipedia, citing 1878 newspaper coverage" },
+      { "date": "1955-01-01", "event": "Bernard Heuvelmans's Sur la piste des bêtes ignorées (On the Track of Unknown Animals) revives the Minhocão case in cryptozoology", "significance": "Re-entry of the creature into 20th-century cryptozoological literature", "source": "Heuvelmans, B. (1955)" }
+    ],
+    "modern_era": "After the 1880s, reports tail off and the Minhocão is treated as a historical phenomenon. Modern Brazilian writers and geologists generally regard the case as a folkloric reading of soil-piping erosion, slumping, and earthquake-like events in heavy southern Brazilian soils, while a minority cryptozoological tradition keeps the dossier open."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
       "verified": 0,
       "disputed": 0,
-      "debunked": 0
+      "debunked": 0,
+      "date_range": { "earliest": "1846", "latest": "1880s" }
     },
-    "notable": [],
+    "notable": [
+      {
+        "id": "minhocao-sighting-1846-saint-hilaire",
+        "name": "Saint-Hilaire's Goiás reports",
+        "date": { "value": "1846-12-01", "precision": "approximate" },
+        "location": {
+          "description": "Padre Aranda and Lake Feia (Lagoa Feia)",
+          "country": "Brazil",
+          "region": "Goiás",
+          "coordinates": { "latitude": -16.0, "longitude": -50.0, "precision": "region" }
+        },
+        "witnesses": { "count": 0, "types": ["Local informants compiled by Saint-Hilaire"], "credibility_factors": ["Reported by a leading European naturalist"] },
+        "description": "Saint-Hilaire compiled local accounts in December 1846 of an enormous worm-like creature said to have drawn horses and horned cattle into the water at Padre Aranda and Lake Feia. He proposed identification with a giant lungfish.",
+        "evidence": ["Local oral testimony", "Saint-Hilaire's 1847 Revue des Deux Mondes article"],
+        "credibility": { "rating": "low", "factors": ["No physical specimen", "Compiled at second hand"], "notes": "Anchor early 19th-century scientific record." },
+        "sources": ["Saint-Hilaire, A. (1847), Revue des Deux Mondes"],
+        "featured": true
+      },
+      {
+        "id": "minhocao-sighting-1877-muller",
+        "name": "Müller / Senhor Lebino, Curitibanos",
+        "date": { "value": "1877-01-01", "precision": "approximate" },
+        "location": {
+          "description": "Curitibanos and surroundings, Santa Catarina",
+          "country": "Brazil",
+          "region": "Santa Catarina",
+          "coordinates": { "latitude": -27.28, "longitude": -50.58, "precision": "approximate" }
+        },
+        "witnesses": { "count": 1, "types": ["Senhor Lebino (informant)"], "credibility_factors": ["Reported by Fritz Müller, an established correspondent of Charles Darwin"] },
+        "description": "Fritz Müller compiled second-hand accounts from Senhor Lebino at Curitibanos describing trenches and disturbed earth attributed to the Minhocão; he proposed identification with a giant South American lungfish.",
+        "evidence": ["Müller's 1877 Zoologischer Garten article"],
+        "credibility": { "rating": "low", "factors": ["Single informant", "No physical specimen"], "notes": "Most influential 19th-century report; central to the modern dossier." },
+        "sources": ["Müller, F. (1877), Zoologischer Garten"],
+        "featured": true
+      },
+      {
+        "id": "minhocao-sighting-1878-amaral-varella",
+        "name": "Francisco de Amaral Varella, southern Brazil",
+        "date": { "value": "1878-01-01", "precision": "approximate" },
+        "location": {
+          "description": "Southern Brazil (specific locality not preserved in the citation)",
+          "country": "Brazil",
+          "region": "Southern Brazil",
+          "coordinates": { "latitude": -27.0, "longitude": -50.0, "precision": "region" }
+        },
+        "witnesses": { "count": 1, "types": ["Francisco de Amaral Varella"], "credibility_factors": ["Named witness recorded in contemporary accounts"] },
+        "description": "Francisco de Amaral Varella reported encountering a Minhocão approximately 50 yards long and 5 yards broad with armoured scales and a pig-like snout, in southern Brazil c. 1878.",
+        "evidence": ["Contemporary newspaper / journal coverage referenced in Wikipedia"],
+        "credibility": { "rating": "low", "factors": ["Single witness", "No physical specimen"], "notes": "Cited in modern overviews via the Wikipedia summary." },
+        "sources": ["Wikipedia, Minhocão"],
+        "featured": false
+      }
+    ],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [
+      {
+        "id": "minhocao-evidence-trenches",
+        "type": "ground disturbance",
+        "name": "Trenches and toppled trees",
+        "description": "Long trenches, slumps, and lines of toppled trees attributed by 19th-century witnesses to the Minhocão's passage in southern Brazil.",
+        "status": "disputed",
+        "analysis": "Modern geological reading attributes such features to soil-piping erosion, riverbank slumping, and seismic activity in heavy red soils, rather than to a biological agent.",
+        "source": "Müller, F. (1877); modern geomorphological commentary"
+      }
+    ],
+    "documentary": [
+      {
+        "id": "minhocao-evidence-saint-hilaire-1847",
+        "type": "scientific article",
+        "name": "Le Minhocão (Saint-Hilaire, 1847)",
+        "date": "1847",
+        "description": "Article in the Revue des Deux Mondes presenting Saint-Hilaire's compiled accounts of the Minhocão.",
+        "status": "verified",
+        "analysis": "Foundational European-language record of the creature.",
+        "source": "Saint-Hilaire, A. (1847)"
+      },
+      {
+        "id": "minhocao-evidence-muller-1877",
+        "type": "scientific article",
+        "name": "Müller's Zoologischer Garten article (1877)",
+        "date": "1877",
+        "description": "Article by Fritz Müller in the German journal Zoologischer Garten presenting accounts collected at Curitibanos and proposing a giant lungfish identification.",
+        "status": "verified",
+        "analysis": "Most influential 19th-century scientific treatment of the Minhocão.",
+        "source": "Müller, F. (1877), Zoologischer Garten"
+      }
+    ]
   },
+
   "theories": {
     "paranormal": [],
-    "scientific": [],
-    "skeptical": []
+    "scientific": [
+      {
+        "name": "Giant South American lungfish (Lepidosiren)",
+        "description": "Saint-Hilaire and Müller proposed that the Minhocão is an unusually large specimen — or relict population — of the South American lungfish (Lepidosiren paradoxa) or a related Ceratodus-like form, accounting for its eel-like body, swampy habitat, and burrowing behaviour.",
+        "proponents": ["Augustin de Saint-Hilaire", "Fritz Müller"],
+        "evidence_cited": ["Eel-like body proportions in eyewitness reports", "Lepidosiren is genuinely native to the region", "Burrowing habit of lungfish during dry seasons"]
+      },
+      {
+        "name": "Surviving glyptodont or giant amphibian",
+        "description": "Bernard Heuvelmans and later cryptozoologists suggested the creature might represent a relict glyptodont (giant armadillo-related Pleistocene mammal) or a giant caecilian-like amphibian.",
+        "proponents": ["Bernard Heuvelmans"],
+        "evidence_cited": ["'Armoured' scaly hide in some reports", "Pleistocene South American megafauna as comparable in size"]
+      }
+    ],
+    "skeptical": [
+      {
+        "name": "Geomorphological misreading",
+        "description": "Most modern Brazilian commentators treat Minhocão reports as a folkloric explanation of natural soil-piping erosion, riverbank slumping, and seismic events in heavy southern Brazilian soils, especially during heavy rains.",
+        "proponents": [],
+        "evidence_cited": ["Trench and slump features in southern Brazilian soils", "Decline of reports as scientific geomorphology explained these features", "Absence of any specimen, bone, or photograph in over a century"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Southern Brazilian rural folklore, especially in Santa Catarina, Paraná, and Goiás",
+        "19th-century European 'living fossil' enthusiasm in which Minhocão reports were assimilated"
+      ],
+      "stories": [
+        "Saint-Hilaire's 1846 Goiás accounts (Padre Aranda, Lake Feia)",
+        "Müller / Senhor Lebino accounts at Curitibanos",
+        "Francisco de Amaral Varella's southern Brazil report"
+      ],
+      "beliefs": "By the late 20th century, the Minhocão was treated by Brazilian audiences chiefly as a historical curiosity and a piece of regional folklore."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
+      "literature": [
+        "Le Minhocão — Augustin de Saint-Hilaire (Revue des Deux Mondes, 1847)",
+        "On the Track of Unknown Animals — Bernard Heuvelmans (1955; later eds.)",
+        "Various 21st-century Brazilian popular cryptozoology books"
+      ],
+      "film_tv": [
+        "Brazilian and international cryptozoology documentary segments"
+      ],
       "games": [],
-      "other": []
+      "music": [],
+      "other": [
+        "The 'Minhocão' elevated road in São Paulo (officially Elevado Presidente João Goulart) is named after the creature for its long, sinuous shape, but is unrelated to the cryptid"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
+    "researchers": [
+      { "name": "Augustin François César Prouvençal de Saint-Hilaire", "affiliation": "Muséum national d'Histoire naturelle, Paris", "contribution": "1846 collection of Minhocão accounts; 1847 Revue des Deux Mondes article", "period": "1840s" },
+      { "name": "Fritz Müller", "affiliation": "Independent (Brazilian-German naturalist; correspondent of Darwin)", "contribution": "1877 Zoologischer Garten article advancing the giant-lungfish hypothesis", "period": "1870s" },
+      { "name": "Bernard Heuvelmans", "affiliation": "Royal Belgian Institute of Natural Sciences (formerly)", "contribution": "Re-entry of the Minhocão case into 20th-century cryptozoology", "period": "1950s–1990s" }
+    ],
     "organizations": [],
-    "ongoing_studies": "None documented"
+    "ongoing_studies": "No active scientific programme; the case is treated as historical."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "saint-hilaire-1847", "type": "article", "title": "Le Minhocão", "authors": ["Augustin de Saint-Hilaire"], "publication": "Revue des Deux Mondes", "date": "1847" },
+    { "id": "muller-1877", "type": "article", "title": "Über den Minhocão", "authors": ["Fritz Müller"], "publication": "Zoologischer Garten", "date": "1877" },
+    { "id": "heuvelmans-1955", "type": "book", "title": "On the Track of Unknown Animals", "authors": ["Bernard Heuvelmans"], "publication": "Rupert Hart-Davis", "date": "1955" },
+    { "id": "wikipedia-minhocao", "type": "website", "title": "Minhocão (legendary creature)", "url": "https://en.wikipedia.org/wiki/Minhoc%C3%A3o_(legendary_creature)", "publication": "Wikipedia", "accessed": "2026-05-07" }
+  ]
 }
